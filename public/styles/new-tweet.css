@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button-counter {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    border: none;
+    border-bottom: solid 2px rgb(68, 68, 68);
+    background-color: inherit;
+    height: auto;
+}
+
+button {
+    border: none;
+    background-color: #4056A1;
+    font-family: Bungee, sans-serif;
+    color: white;
+    padding: 4px;
+}
