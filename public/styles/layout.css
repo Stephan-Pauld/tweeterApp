@@ -1,9 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
-
 * {
   box-sizing: border-box;
 }
@@ -13,11 +7,6 @@
 *:after {
   box-sizing: inherit;
 }
-
-/*
-* Global layout stuff
-*/
-
 body {
   color: #545149;
   font-size: 24px;
@@ -25,7 +14,6 @@ body {
   height: 100%;
   background-color: #f5f8ff;
   background-image: url("https://www.transparenttextures.com/patterns/ecailles.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .outter-container {
   margin: 3% 5% 0 0;
@@ -34,14 +22,3 @@ body {
   display: flex;
   justify-content: center;
 }
-
-/* .container {
-    width: 90%;
-    background-color: #f4f1ec;
-    align-content: center;
-    margin: 25px auto;
-} */
-
-/*
-* Additional CSS can be defined below or in other CSS files, as per instructions
-*/

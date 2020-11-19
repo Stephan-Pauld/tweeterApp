@@ -35,10 +35,12 @@
         <div class="navRow">
             <span class="logo">tweeter</span>
             <div class="phrase">
-                <span style="font-family: Bungee;">Get </span> "Tweetering"
+                <span>Write  </span> a new tweet
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3767/3767273.svg" alt="">
             </div>
         </div>
     </nav>
+    
     <div class="entire">
         <div class="real-header">
             <header>
@@ -60,7 +62,7 @@
                     <div class="error-msg">
                         <h4>Too Many Characters! YOU KNOW THE RULES!!!!! 140 characters max plz</h4>
                     </div>
-                    <form class="prevent" action="/tweets" method="POST">
+                    <form id="slide" class="prevent" action="/tweets" method="POST">
                         <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
                         <div class="button-counter">
                             <button class="btn" type="submit">Tweet</button>
@@ -73,5 +75,8 @@
             </main>
         </div>
     </div>
+                            <div class="arrow">
+                                <img class="arrow-toggle" src="https://www.flaticon.com/svg/static/icons/svg/1635/1635653.svg" alt="">
+                            </div>
 </body>
 </html>

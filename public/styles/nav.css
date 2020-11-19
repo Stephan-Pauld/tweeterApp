@@ -1,36 +1,79 @@
+@keyframes example {
+  0% {
+    margin-left: -4%;
+  }
+  25% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 4%;
+  }
+  75% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: -4%;
+  }
+}
+
 nav {
-    height: 50px;
-    text-align: center;
-    background-color: #4056A1;
-    color: #FFFF;
-    padding: 1.5em;
-    transition: height 400ms ease;
+  height: 55px;
+  text-align: center;
+  background-color: #4056a1;
+  color: #ffff;
+  padding: 1.5em;
+  transition: height 400ms ease;
 }
 
 .navRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    font-family: Bungee, sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-    justify-content: flex-start;
-    flex-direction: column;
+  display: flex;
+  font-family: Bungee, sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .phrase {
-    font-size: 25px;
-    display: flex;
-    justify-content: flex-end;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.phrase:hover{
+  cursor: pointer;
+}
+.phrase span {
+  font-family: Bungee;
+  margin-right: 10px;
+}
+.phrase img {
+  width: 20px;
+  animation-name: example;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
 .sticky {
-    height: 35px;
-    top: 0;
-    position: sticky;
-    width: 97%;
+  height: 45px;
+  top: 0;
+  position: sticky;
+}
+.arrow{
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0 1% 5% 0;
+}
+.arrow-toggle {
+  display: none;
+  width: 80px;
+}
+.arrow:hover {
+  cursor: pointer;
 }

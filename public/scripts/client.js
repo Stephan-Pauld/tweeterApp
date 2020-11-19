@@ -13,9 +13,11 @@ const createTweetElement = (tweetData) => {
   </div>
   <div class="top-row">
       <img src="${tweetData.user.avatars}" />
-      <h4>${tweetData.user.name}</h4>
+        <h4>${tweetData.user.name}</h4>
   </div>
+  <div class="wrap">
   <h4 class="test">${escape(tweetData.content.text)}</h4>
+  </div>
   <hr>
   <div class="bot-row">
       <h6 class="date-tweet">${tweetData.created_at}</h6>
@@ -53,12 +55,12 @@ $(document).ready(function () {
         event.preventDefault()
 
         if (currentLength > 140) {
-            $('.error-msg').addClass("show-error")
+            $('.error-msg').slideDown();
+        } else {
             $('#tweet-text').val('');
             $(".counter").text("140")
             $(".counter").removeClass("max-characters")
-        } else {
-            $('.error-msg').removeClass("show-error")
+            $('.error-msg').slideUp();
             $.ajax({
                 method: "POST",
                 url: "/tweets",

@@ -1,7 +1,7 @@
 .error-msg {
     color: red;
     width: 100%;
-    opacity: 0%;
+    display: none;
     transition: opacity 300ms ease;
 }
 .error-msg h4 {
@@ -9,7 +9,7 @@
     margin: 1%;
     padding: 1%;
 }
-.show-error {
+.opacity {
     opacity: 100%;
 }
 form {
@@ -19,6 +19,9 @@ form {
     justify-content: center;
     font-weight: bold;
     border: solid 2px rgb(68, 68, 68);
+}
+#slide {
+    display: none;
 }
 
 .button-counter {

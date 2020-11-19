@@ -57,3 +57,7 @@ article:hover .username {
 .max-characters {
     color: firebrick;
 }
+.wrap{
+    overflow-wrap: anywhere;
+    margin: 0 5%;
+}
