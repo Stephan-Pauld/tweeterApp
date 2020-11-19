@@ -2,7 +2,7 @@
 
 // Basic express setup:
 
-const PORT = 8000;
+const PORT = 8001;
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
@@ -34,9 +34,8 @@ app.use("/tweets", tweetsRoutes);
 
 
 
-app.post("/tweets", (req, res) => {
-    res.send({ Cats: "cats" })
-});
+// app.post("/tweets", (req, res) => {
+// });
 
 
 

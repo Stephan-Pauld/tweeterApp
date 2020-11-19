@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css">
     <link rel="stylesheet" href="/styles/header.css" type="text/css">
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css">
+    <link rel="stylesheet" href="/styles/media-query.css" type="text/css">
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -28,7 +31,6 @@
 </head>
 
 <body>
-    <!-- Top nav bar (fixed) -->
     <nav>
         <div class="navRow">
             <span class="logo">tweeter</span>
@@ -37,31 +39,39 @@
             </div>
         </div>
     </nav>
-    <header>
-        <div class="avatar">
-            <img src="/images/profile-hex.png">
-        </div>
-        <br>
-        <div class="avatar-name">
-            <h2>Your Name</h2>
-        </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-
-    <main class="container">
-        <section class="new-tweet">
-            <form action="/tweets" method="POST">
-                <label for="tweet-text">What are you humming about?</label>
-                <textarea name="text" id="tweet-text">testtttt</textarea>
-
-                <div class="button-counter">
-                    <button type="submit">Tweet</button>
-                    <output name="counter" class="counter" for="tweet-text">140</output>
+    <div class="entire">
+        <div class="real-header">
+            <header>
+                <div class="new-head">
+                    <div class="avatar">
+                        <img src="/images/profile-hex.png">
+                    </div>
+                    <br>
+                    <div class="avatar-name">
+                        <h2>Your Name</h2>
+                    </div>
                 </div>
-            </form>
-        </section>
-    </main>
+            </header>
+        </div>
+        <!-- Page-specific (main) content here -->
+        <div class="outter-container">
+            <main class="container">
+                <section class="new-tweet">
+                    <div class="error-msg">
+                        <h4>Too Many Characters! YOU KNOW THE RULES!!!!! 140 characters max plz</h4>
+                    </div>
+                    <form class="prevent" action="/tweets" method="POST">
+                        <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
+                        <div class="button-counter">
+                            <button class="btn" type="submit">Tweet</button>
+                            <output name="counter" class="counter" for="tweet-text">140</output>
+                        </div>
+                    </form>
+                </section>
+                <div class="user-tweets">
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
-
 </html>

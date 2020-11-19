@@ -1,0 +1,59 @@
+article {
+    margin: 50px 0;
+    border: solid 3px rgb(68, 68, 68);
+}
+
+article img {
+    width: 75px;
+    padding: 1em;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    color: #4056A1;
+    margin-right: 100px;
+    float: right;
+    opacity: 0%;
+    transition: opacity 400ms ease;
+}
+
+.test {
+    display: flex;
+    color: rgb(68, 68, 68);
+    justify-content: center;
+}
+
+hr {
+    border: 2px solid rgb(68, 68, 68);
+    width: 95%;
+}
+
+.bot-row {
+    margin: 0;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials img {
+    width: 15px;
+    padding: 2px;
+}
+
+article:hover {
+    box-shadow: 6px 6px 0px -1px rgba(97, 129, 241, 0.568);
+    opacity: 100%;
+}
+
+article:hover .username {
+    opacity: 70%;
+}
+
+.max-characters {
+    color: firebrick;
+}

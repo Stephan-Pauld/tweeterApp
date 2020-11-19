@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1200px) {
+  .real-header {
+    margin: 0%;
+    width: 100%;
+  }
+  .entire {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    background-color: #960067;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+    width: auto;
+  }
+
+  .outter-container {
+    margin: 3%;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  header {
+    background-color: #960067;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+  }
+  .real-header {
+  }
+}
+
+
+
+/* #4056A1 Header */
+/* #960067 Background color */

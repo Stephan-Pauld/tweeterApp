@@ -5,35 +5,42 @@
  */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 
 /*
 * Global layout stuff
 */
 
 body {
-    color: #545149;
-    background-color: #f4f1ec;
-    font-size: 24px;
-    font-family: Source Sans Pro, sans-serif;
-    height: 100%;
+  color: #545149;
+  font-size: 24px;
+  font-family: Source Sans Pro, sans-serif;
+  height: 100%;
+  background-color: #f5f8ff;
+  background-image: url("https://www.transparenttextures.com/patterns/ecailles.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.outter-container {
+  margin: 3% 5% 0 0;
+}
+.entire {
+  display: flex;
+  justify-content: center;
 }
 
-.container {
+/* .container {
     width: 90%;
     background-color: #f4f1ec;
     align-content: center;
-    margin: 0 auto;
-}
-
+    margin: 25px auto;
+} */
 
 /*
 * Additional CSS can be defined below or in other CSS files, as per instructions

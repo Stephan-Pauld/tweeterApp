@@ -1,25 +1,47 @@
+.error-msg {
+    color: red;
+    width: 100%;
+    opacity: 0%;
+    transition: opacity 300ms ease;
+}
+.error-msg h4 {
+    border: solid 3px firebrick;
+    margin: 1%;
+    padding: 1%;
+}
+.show-error {
+    opacity: 100%;
+}
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     font-weight: bold;
+    border: solid 2px rgb(68, 68, 68);
 }
 
 .button-counter {
-    margin-top: 5px;
+    margin: 5px 5%;
     display: flex;
     justify-content: space-between;
 }
 
 textarea {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(68, 68, 68);
     border: none;
     border-bottom: solid 2px rgb(68, 68, 68);
     background-color: inherit;
     height: auto;
+    margin: 10px 3%;
+    resize: none;
 }
 
 button {
+    margin: 5px;
     border: none;
     background-color: #4056A1;
     font-family: Bungee, sans-serif;
