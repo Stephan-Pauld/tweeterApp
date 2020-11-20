@@ -77,6 +77,9 @@ $(document).ready(function() {
 
     if (currentLength > 140) {
       $('.error-msg').slideDown();
+    } else if ((currentLength === 0)) {
+      $('.error-msg').slideDown();
+
     } else {
       $('#tweet-text').val('');
       $(".counter").text("140");
