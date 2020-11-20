@@ -38,11 +38,18 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* opacity: 0%; */
 }
 
 .socials img {
+    opacity: 0%;
     width: 15px;
     padding: 2px;
+    transition: opacity 300ms ease;
+}
+.date-tweet{
+    opacity: 0%;
+    transition: opacity 300ms ease;
 }
 
 article:hover {
@@ -52,6 +59,15 @@ article:hover {
 
 article:hover .username {
     opacity: 70%;
+}
+article:hover .socials img {
+    opacity: 100%;
+}
+article:hover .date-tweet{
+    opacity: 100%;
+}
+.socials img:hover {
+    width: 18px;
 }
 
 .max-characters {

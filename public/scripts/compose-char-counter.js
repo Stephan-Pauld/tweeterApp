@@ -26,21 +26,21 @@ $(document).ready(function () {
         // Back to top button
         if (this.scrollY > 80) {
             $('.arrow-toggle').fadeIn();
-        }else{
+        } else {
             $('.arrow-toggle').fadeOut();
         }
     });
 
     // header click dropdown tweetbox 
     $(".phrase").click(function () {
-
         if ($('#slide').is(':hidden')) {
             $("form").slideDown();
+            $("#tweet-text").focus();
         } else {
             $("form").slideUp()
         }
     })
-    $('.arrow-toggle').click(function(e) {
+    $('.arrow-toggle').click(function (e) {
         e.preventDefault();
         window.scrollTo(0, 0);
     })
