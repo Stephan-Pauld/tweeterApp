@@ -16,16 +16,8 @@ Project Link: https://github.com/Stephan-Pauld/tweeterApp
 ---
 
 ## Final Product
-1. Full page
 !["Screenshot of fullpage](https://github.com/Stephan-Pauld/tweeterApp/blob/master/docs/fullPage.png?raw=true)
-2.Back to top button with faded header buttons
 !["Screenshot of fullpage](https://github.com/Stephan-Pauld/tweeterApp/blob/master/docs/backToTop.png?raw=true)
-
-3.hover effects
 !["Screenshot of fullpage](https://github.com/Stephan-Pauld/tweeterApp/blob/master/docs/hover.png?raw=true)
-
-4.Tablet size
 !["Screenshot of fullpage](https://github.com/Stephan-Pauld/tweeterApp/blob/master/docs/tablet.png?raw=true)
-
-5.error message with word counter
 !["Screenshot of fullpage](https://github.com/Stephan-Pauld/tweeterApp/blob/master/docs/toolong.png?raw=true)
